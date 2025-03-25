@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-worksans: "Work Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --color-primary: #002228;
+  --color-secondary: #0ff1f6;
+  --color-acent: #14bcb2;
+  --color-borderColor: #183a40;
+  --shadow-btnShadow: 0px 0px 16px 0px #53fffc33;
+}
