@@ -6,7 +6,7 @@ const Button = ({ children, className }) => {
     <>
       <button
         className={cn(
-          "w-[122px] h-[36px] rounded-full bg-secondary text-primary text-sm font-worksans font-[500] cursor-pointer shadow-btnShadow",
+          "w-[122px] h-[36px] rounded-full bg-secondary text-primary text-sm font-worksans font-[500] cursor-pointer shadow-btnShadow hover:scale-105 transform transition-all duration-300",
           className
         )}
       >
