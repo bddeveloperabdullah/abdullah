@@ -33,13 +33,15 @@ const Header = () => {
             </div>
             <div>
               <div className="hidden md:flex gap-1.5 lg:gap-3.5">
-                <Button>
-                  <Link to="/haire">Haire Me</Link>
-                </Button>
+                <Link to="/haire">
+                  <Button>Haire Me</Button>
+                </Link>
 
-                <Button className="border border-white bg-transparent text-white">
-                  <Link to="/contact">Contact Us</Link>
-                </Button>
+                <Link to="/contact">
+                  <Button className="border border-white bg-transparent text-white">
+                    Contact Us
+                  </Button>
+                </Link>
               </div>
             </div>
 
