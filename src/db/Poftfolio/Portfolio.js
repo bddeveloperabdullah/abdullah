@@ -14,6 +14,8 @@ export const portfolioItem = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et quisquam impedit cum maxime eius culpa, exercitationem incidunt vitae laborum cumque dolores. Quisquam fugiat id ratione explicabo porro autem, aspernatur, veritatis maiores accusantium magnam ipsam consectetur culpa corporis corrupti voluptate veniam. Non, et ab. Quia labore iusto quo aperiam culpa.",
     stack: ["React.js", "Tailwind CSS", "Framer Motion"],
     photo: "/item2.png",
+    liveLink: "https://wizia-one.vercel.app/",
+    gitLink: "https://github.com/bddeveloperabdullah/wizia",
   },
   {
     id: 3,
