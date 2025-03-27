@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { portfolioItem } from "../../db/Poftfolio/Portfolio";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +20,7 @@ const Portfolio = () => {
             {/* portfolio Content  */}
             <div className="text-white w-full md:w-3/6">
               <div className="border-b-2 border-white py-5 space-y-2.5 md:space-y-5">
-                <h2 className="text-2xl md:text-4xl font-montserrat font-semibold">
+                <h2 className="text-2xl lg:text-4xl font-montserrat font-semibold">
                   {currentSlider.title}
                 </h2>
                 <p className="text-sm md:text-base font-worksans font-light">
@@ -34,8 +35,13 @@ const Portfolio = () => {
 
               {/* Link Area  */}
               <div className="mt-5 flex gap-5 pb-5 md:pb-0">
-                <FaLink className="text-2xl md:text-3xl cursor-pointer hover:text-secondary transition-all duration-300" />
-                <FaGithub className="text-2xl md:text-3xl cursor-pointer hover:text-secondary transition-all duration-300" />
+                <Link to={currentSlider.liveLink}>
+                  <FaLink className="text-2xl md:text-3xl cursor-pointer hover:text-secondary transition-all duration-300" />
+                </Link>
+
+                <Link to={currentSlider.gitLink}>
+                  <FaGithub className="text-2xl md:text-3xl cursor-pointer hover:text-secondary transition-all duration-300" />
+                </Link>
               </div>
             </div>
 
