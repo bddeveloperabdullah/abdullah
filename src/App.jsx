@@ -6,6 +6,7 @@ import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Haire from "./components/Haire/Haire";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/haire" element={<Haire />} />
         </Routes>
+        <Footer />
       </main>
     </>
   );
