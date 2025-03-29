@@ -1,9 +1,17 @@
 import React from "react";
 import Button from "../../similar/Button";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaGithub, FaLink, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaGithub,
+  FaLink,
+  FaLinkedinIn,
+  FaUser,
+  FaUserClock,
+} from "react-icons/fa";
 import AnimatedText from "../../utility/AnimatedText";
 import Portfolio from "../Portfolio/Portfolio";
+import { IoMail } from "react-icons/io5";
 
 const searviceItem = [
   {
@@ -110,6 +118,43 @@ const Hero = () => {
 
           {/* Portfolio  */}
           <Portfolio />
+
+          {/* Contact Us Item  */}
+
+          <div className="py-10 md:py-20 px-5">
+            <h2 className="text-2xl md:text-3xl text-center font-montserrat font-semibold text-white">
+              Contact Us
+            </h2>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-10">
+              <div className="w-full md:w-1/4 bg-[#07292F] border border-borderColor rounded-md text-white flex flex-col items-center gap-2 p-5">
+                <FaUser className="text-2xl text-secondary" />
+                <h3 className="text-lg md:text-xl font-montserrat font-semibold">
+                  Abdullah
+                </h3>
+                <p className="text-sm font-worksans font-light">
+                  Full Stack Developer
+                </p>
+              </div>
+              <div className="w-full md:w-1/4 bg-[#07292F] border border-borderColor rounded-md text-white flex flex-col items-center gap-2 p-5">
+                <FaUserClock className="text-3xl text-secondary" />
+                <h3 className="text-lg md:text-xl font-montserrat font-semibold">
+                  Freelance
+                </h3>
+                <p className="text-sm font-worksans font-light">
+                  Available Right Now
+                </p>
+              </div>
+              <div className="w-full md:w-1/4 bg-[#07292F] border border-borderColor rounded-md text-white flex flex-col items-center gap-2 p-5">
+                <IoMail className="text-2xl text-secondary" />
+                <h3 className="text-lg md:text-xl font-montserrat font-semibold">
+                  Email
+                </h3>
+                <p className="text-sm font-worksans font-light">
+                  bddeveloperabdullah@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
